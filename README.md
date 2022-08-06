@@ -10,4 +10,6 @@ Pixel Art Project - Udacity - Full Stack Developer Program
 - Single click to color
 - Double click to remove color
 
-Have fun!
+> Have fun!
+
+![HappyFace](happy_face.png)
