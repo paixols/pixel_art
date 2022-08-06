@@ -8,21 +8,34 @@ sizePicker.addEventListener('submit', function(event){
 });
 const rows = document.querySelector('#inputHeight');
 const columns = document.querySelector('#inputWidth');
-// Design Canvas
+// Canvas
 const designCanvas = document.querySelector('#pixelCanvas');
-// Add color to [row,column] element
+// Add Color
 const singleClick = 'click';
+/**
+ * Adds color to the cell -> [row,column]
+ * @param {event} event - Click Event
+ */
 function addColor(event) {
     event.preventDefault();
     event.target.style.backgroundColor = colorPicker.value;
 }
-// Remove color from [row,column] element
+// Remove Color
 const doubleClick = 'dblclick';
+/**
+ * Removes color from the cell -> [row,column]
+ * @param {event} event - Double Click Event
+*/
 function removeColor(event) {
     event.preventDefault();
     event.target.style.backgroundColor = defaultColor;
 }
-// Create Grid
+/**
+ * Create grid for the design canvas
+ * @param {event} event - Submit Event
+ * Note that this will use the current width and height
+ * used as input on the size picker. 
+*/
 function makeGrid(event) {
     event.preventDefault();
     // Clean current grid
