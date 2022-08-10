@@ -43,9 +43,9 @@ function makeGrid(event) {
     designCanvas.removeChild(designCanvas.firstChild);
    }
     // Create Grid w/rows & columns
-    for(let row = 0; row <= rows.value; row ++) {
+    for(let row = 0; row < rows.value; row ++) {
         let insertRow = designCanvas.insertRow(row);
-        for(let column = 0; column <= columns.value; column++) {
+        for(let column = 0; column < columns.value; column++) {
             let insertColumn = insertRow.insertCell(column);
             // Events
             insertColumn.addEventListener(singleClick,addColor);
